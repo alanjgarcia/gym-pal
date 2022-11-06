@@ -1,0 +1,60 @@
+### Users create (signup)
+POST http://localhost:3000/users.json
+Content-Type: application/json
+
+{
+  "name": "Test name",
+  "email": "test@test.com",
+  "password": "password",
+  "password_confirmation": "password"
+}
+
+
+### Sessions create (login)
+POST http://localhost:3000/sessions.json
+Content-Type: application/json
+
+{
+  "email": "test@test.com",
+  "password": "password"
+}
+
+
+### Users Index
+GET http://localhost:3000/users.json
+
+
+### Users Show
+GET http://localhost:3000/users/1.json
+
+
+### Users Update
+PATCH http://localhost:3000/users/3.json
+Content-Type: application/json
+
+{
+  "name": "Peter Jang"
+}
+
+
+### Users Destroy
+DELETE http://localhost:3000/users/4.json
+
+
+### Exercises Index
+GET http://localhost:3000/exercises.json
+
+
+### Routines Index
+GET http://localhost:3000/routines.json
+
+
+### Routines Create
+POST http://localhost:3000/routines.json
+Content-Type: application/json
+
+{
+  "user_id": 1,
+  "exercise_id": 1,
+  "reps": 15
+}

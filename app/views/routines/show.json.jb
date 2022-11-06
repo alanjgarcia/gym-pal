@@ -1,0 +1,9 @@
+{
+  id: @routine.id,
+  user_id: @routine.user_id,
+  exercise_id: @routine.exercise_id,
+  reps: @routine.reps, 
+  created_at: @routine.created_at,
+  updated_at: @routine.updated_at
+}
+
