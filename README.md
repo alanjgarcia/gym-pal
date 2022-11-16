@@ -1,24 +1,21 @@
-# README
+# <Gym Pal backend >
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
 
-Things you may want to cover:
 
-* Ruby version
+## Installation
 
-* System dependencies
+```bash
+bundle install gym-pal 
+rails db:create db:migrate db:seed
+```
 
-* Configuration
+## Usage
 
-* Database creation
+```bash
+rails server
+```
 
-* Database initialization
+You can test web requests as documented in the `requests.http` file.
 
-* How to run the test suite
 
-* Services (job queues, cache servers, search engines, etc.)
 
-* Deployment instructions
-
-* ...
